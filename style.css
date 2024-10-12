@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+.container {
+    border: 2px solid white;
+    background-color: #252744;
+    text-align: left;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.container img {
+    mix-blend-mode: color-burn;
+    height: 70px;
+    border-top-left-radius: 10px;
+    margin: 10px;
+}
+
+.container img:hover {
+    cursor: pointer;
+}
+
+.coding {
+    background: #252744;
+    text-align: start;
+    display: flex;
+    padding: 1rem;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+}
+
+.input,
+.output {
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+label {
+    background-color: black;
+    margin-top: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+label i {
+    padding-right: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 350px;
+    background: rgba(4, 4, 20, 0.87);
+    color: white;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 0px 0px 7px 7px;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    border: 0;
+    outline: 0;
+    color: white;
+}
+
+#output {
+    font-size: 25px;
+    background-color: white;
+    max-height: 96.5%;
+    border-radius: 0px 0px 7px 7px;
+}
+
+.download {
+    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    border-radius: 8px;
+    color: #ffffff;
+    display: flex;
+    font-size: 18px;
+    padding: 3px;
+    cursor: pointer;
+    margin: 10px 10px 10px 45%;
+    border: none;
+}
+
+.download span {
+    background-color: rgb(5, 6, 45);
+    padding: 5px 5px;
+    border-radius: 7px;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.download:hover span {
+    background: none;
+}
+
+#hideshowhtml,
+#hideshowcss,
+#hideshowjs {
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 5%;
+    transition: 0.5s;
+    width: 25px;
+}
+
+#hideshowhtml:hover,
+#hideshowcss:hover,
+#hideshowjs:hover {
+    rotate: 45deg;
+}

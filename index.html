@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodEditor</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="container">
+        <a href="#"><img src="asset/programming.png"></a>
+        <div class="coding">
+            <div class="input">
+                <label><i class='bx bxl-html5'></i>HTML <button id="hideshowhtml">+</button></label>
+                <textarea id="html-code" spellcheck="false" onkeyup="displayOutput()"></textarea>
+
+                <label><i class='bx bxl-css3' ></i>CSS <button id="hideshowcss">+</button></label>
+                <textarea id="css-code" spellcheck="false" onkeyup="displayOutput()"></textarea>
+
+                <label><i class='bx bxl-javascript' ></i>JavaScript <button id="hideshowjs">+</button></label>
+                <textarea id="js-code" spellcheck="false" onkeyup="displayOutput()"></textarea>
+            </div>
+        <div class="output">
+            <label><i class='bx bx-code'></i>Output</label>
+            <iframe id="output"></iframe>
+        </div>
+        </div>
+        <button class="download" role="button" onclick="downloadCode()"><span class="text"><i class='bx bxs-download'></i> Download Code</span></button>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
